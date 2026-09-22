@@ -10,6 +10,11 @@ import { z } from 'zod';
 // Cargar variables de entorno desde el archivo .env
 dotenv.config();
 
+// Asignar el puerto inyectado por plataformas de hosting (e.g. Railway) a PUERTO
+if (process.env.PORT) {
+  process.env.PUERTO = process.env.PORT;
+}
+
 // Esquema de validación y coerción para las variables de entorno requeridas
 const esquemaEntorno = z.object({
   PUERTO: z
