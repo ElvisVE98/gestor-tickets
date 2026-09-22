@@ -266,6 +266,13 @@ export function Login() {
                 )}
               </Button>
             </form>
+
+            {/* Bloque informativo de credenciales de prueba */}
+            <div className="mt-5 rounded-lg border border-slate-200 bg-slate-50/80 p-3 text-xs text-slate-600">
+              <p className="font-semibold text-slate-800 mb-1">Credenciales de prueba:</p>
+              <p><span className="font-medium text-slate-700">Correo:</span> admin@prueba.com</p>
+              <p><span className="font-medium text-slate-700">Contraseña:</span> administrador</p>
+            </div>
           </CardContent>
         </Card>
 
