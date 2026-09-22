@@ -124,7 +124,7 @@ export function PanelAdjuntosTicket({
             size="sm"
             disabled={subiendoArchivo}
             onClick={() => inputArchivoRef.current?.click()}
-            className="h-7 text-xs border-slate-300 text-[#1a2b5c] hover:bg-slate-100"
+            className="h-7 text-xs border-slate-300 text-[#312e81] hover:bg-slate-100"
           >
             {subiendoArchivo ? (
               <>
@@ -162,7 +162,7 @@ export function PanelAdjuntosTicket({
                     adjunto.tipo_archivo,
                     adjunto.nombre_archivo
                   )}
-                  <span className="text-xs font-medium text-slate-700 truncate group-hover:text-[#1a2b5c] group-hover:underline">
+                  <span className="text-xs font-medium text-slate-700 truncate group-hover:text-[#312e81] group-hover:underline">
                     {adjunto.nombre_archivo}
                   </span>
                 </div>

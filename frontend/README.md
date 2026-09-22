@@ -1,6 +1,6 @@
-# Frontend — Aplicación Web de Curifor Tickets
+# Frontend — Aplicación Web de Resolva Tickets
 
-Interfaz web para la plataforma de gestión de tickets de soporte interno de Curifor, construida con React 19, TypeScript, Vite, Tailwind CSS y componentes de UI basados en shadcn/ui.
+Interfaz web para la plataforma de gestión de tickets de soporte interno de Resolva, construida con React 19, TypeScript, Vite, Tailwind CSS y componentes de UI basados en shadcn/ui.
 
 ---
 

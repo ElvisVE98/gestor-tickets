@@ -27,7 +27,7 @@ function Badge({ className, variant = 'default', ...props }: BadgeProps) {
     warning:
       'border-transparent bg-amber-100 text-amber-800 border border-amber-200 hover:bg-amber-200/80',
     info: 'border-transparent bg-sky-100 text-sky-800 border border-sky-200 hover:bg-sky-200/80',
-    navy: 'border-transparent bg-[#1a2b5c] text-white hover:bg-[#243b7d]',
+    navy: 'border-transparent bg-[#312e81] text-white hover:bg-[#4338ca]',
   };
 
   return (

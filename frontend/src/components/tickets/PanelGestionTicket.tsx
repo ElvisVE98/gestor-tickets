@@ -89,11 +89,11 @@ export function PanelGestionTicket({
   };
 
   return (
-    <Card className="border-[#1a2b5c]/20 bg-white shadow-sm">
-      <CardHeader className="pb-3 border-b border-slate-100 bg-slate-50/50">
-        <CardTitle className="text-sm font-bold text-[#1a2b5c] flex items-center gap-2">
-          <ShieldCheck className="h-4 w-4 text-[#1a2b5c]" />
-          Gestionar ticket
+    <Card className="border-[#312e81]/20 bg-white shadow-sm">
+      <CardHeader className="pb-3 border-b border-slate-100">
+        <CardTitle className="text-sm font-bold text-[#312e81] flex items-center gap-2">
+          <ShieldCheck className="h-4 w-4 text-[#312e81]" />
+          Gestión del Ticket
         </CardTitle>
       </CardHeader>
       <CardContent className="pt-4 space-y-4">

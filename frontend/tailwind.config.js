@@ -48,10 +48,10 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        curifor: {
-          navy: '#1a2b5c',
-          'navy-light': '#243b7d',
-          'navy-dark': '#121e40',
+        brand: {
+          DEFAULT: '#312e81',
+          hover: '#4338ca',
+          dark: '#1e1b4b',
         },
       },
       borderRadius: {

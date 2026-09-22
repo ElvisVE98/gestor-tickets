@@ -35,11 +35,11 @@ export function PanelHistorialTicket({ historial }: PanelHistorialTicketProps) {
           <ol className="relative border-l border-slate-200 ml-2 space-y-4">
             {historial.map((item) => (
               <li key={item.id} className="ml-4">
-                <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-[#1a2b5c]" />
+                <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-[#312e81]" />
                 <p className="text-xs font-semibold text-slate-800">
                   {NOMBRES_ESTADOS[item.estado_anterior] || item.estado_anterior}{' '}
                   <span className="text-slate-400">→</span>{' '}
-                  <span className="text-[#1a2b5c]">
+                  <span className="text-[#312e81]">
                     {NOMBRES_ESTADOS[item.estado_nuevo] || item.estado_nuevo}
                   </span>
                 </p>

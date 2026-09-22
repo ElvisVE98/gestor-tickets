@@ -25,7 +25,7 @@ export function RutaPublica({ children }: RutaPublicaProps) {
   if (cargando) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center bg-slate-50">
-        <Loader2 className="h-8 w-8 animate-spin text-[#1a2b5c]" />
+        <Loader2 className="h-8 w-8 animate-spin text-[#312e81]" />
         <p className="mt-3 text-sm font-medium text-slate-600">
           Cargando...
         </p>

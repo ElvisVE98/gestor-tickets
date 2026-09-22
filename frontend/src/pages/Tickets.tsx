@@ -156,7 +156,7 @@ export function Tickets() {
           </div>
 
           <Button
-            className="bg-[#1a2b5c] text-white shadow hover:bg-[#243b7d] self-start sm:self-auto"
+            className="bg-[#312e81] text-white shadow hover:bg-[#4338ca] self-start sm:self-auto"
             onClick={() => navigate('/tickets/nuevo')}
           >
             <Plus className="mr-2 h-4 w-4" />
@@ -242,7 +242,7 @@ export function Tickets() {
               onClick={() => setFiltroEstado('')}
               className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
                 filtroEstado === ''
-                  ? 'bg-[#1a2b5c] text-white shadow-sm'
+                  ? 'bg-[#312e81] text-white shadow-sm'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
               }`}
             >
@@ -399,7 +399,7 @@ export function Tickets() {
         <Card className="border-slate-200 shadow-sm overflow-hidden bg-white">
           {cargando ? (
             <div className="flex flex-col items-center justify-center py-16 text-slate-500">
-              <RotateCw className="h-8 w-8 animate-spin text-[#1a2b5c]" />
+              <RotateCw className="h-8 w-8 animate-spin text-[#312e81]" />
               <p className="mt-3 text-sm font-medium">Cargando tickets...</p>
             </div>
           ) : tickets.length === 0 ? (
@@ -461,7 +461,7 @@ export function Tickets() {
                         }`}
                       >
                         {/* Folio */}
-                        <TableCell className="font-mono font-semibold text-[#1a2b5c]">
+                        <TableCell className="font-mono font-semibold text-[#312e81]">
                           {formatearFolio(ticket.folio)}
                         </TableCell>
 

@@ -24,7 +24,7 @@ function PaginaNoEncontrada() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-[#1a2b5c]">404</h1>
+        <h1 className="text-4xl font-bold text-[#312e81]">404</h1>
         <p className="mt-2 text-gray-600">Página no encontrada</p>
       </div>
     </div>

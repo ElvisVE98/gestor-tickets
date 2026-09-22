@@ -84,7 +84,7 @@ const DialogTitle = React.forwardRef<
   <h3
     ref={ref}
     className={cn(
-      'text-lg font-bold leading-none tracking-tight text-[#1a2b5c]',
+      'text-lg font-bold leading-none tracking-tight text-[#312e81]',
       className
     )}
     {...props}

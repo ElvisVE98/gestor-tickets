@@ -178,7 +178,7 @@ export function EstablecerPassword() {
   if (verificandoToken) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center bg-slate-50 px-4">
-        <Loader2 className="h-8 w-8 animate-spin text-[#1a2b5c]" />
+        <Loader2 className="h-8 w-8 animate-spin text-[#312e81]" />
         <p className="mt-3 text-sm font-medium text-slate-600">
           Verificando enlace de acceso...
         </p>
@@ -213,7 +213,7 @@ export function EstablecerPassword() {
               <div className="flex flex-col gap-2 pt-2">
                 <Button
                   onClick={() => navigate('/login')}
-                  className="w-full bg-[#1a2b5c] text-white hover:bg-[#243b7d]"
+                  className="w-full bg-[#312e81] text-white hover:bg-[#4338ca]"
                 >
                   Volver al inicio de sesión
                 </Button>
@@ -229,9 +229,9 @@ export function EstablecerPassword() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-50 px-4 py-12 sm:px-6 lg:px-8">
       <div className="w-full max-w-md space-y-6">
-        {/* Encabezado con identidad Curifor */}
+        {/* Encabezado con identidad Resolva */}
         <div className="text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-[#1a2b5c] text-white shadow-md">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-[#312e81] text-white shadow-md">
             <KeyRound className="h-6 w-6" />
           </div>
           <h2 className="mt-4 text-2xl font-bold tracking-tight text-slate-900">
@@ -245,7 +245,7 @@ export function EstablecerPassword() {
         {/* Tarjeta con formulario */}
         <Card className="border-slate-200 shadow-lg">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-lg font-semibold text-[#1a2b5c]">
+            <CardTitle className="text-lg font-semibold text-[#312e81]">
               Nueva Contraseña
             </CardTitle>
             <CardDescription>
@@ -301,7 +301,7 @@ export function EstablecerPassword() {
               {/* Botón de confirmación */}
               <Button
                 type="submit"
-                className="w-full bg-[#1a2b5c] text-white hover:bg-[#243b7d] shadow"
+                className="w-full bg-[#312e81] text-white hover:bg-[#4338ca] shadow"
                 disabled={enviando}
               >
                 {enviando ? (
@@ -321,7 +321,7 @@ export function EstablecerPassword() {
             <div className="mt-4 text-center">
               <Link
                 to="/login"
-                className="text-xs text-slate-500 hover:text-[#1a2b5c] transition-colors"
+                className="text-xs text-slate-500 hover:text-[#312e81] transition-colors"
               >
                 Volver al inicio de sesión
               </Link>

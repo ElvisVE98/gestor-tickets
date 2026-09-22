@@ -54,7 +54,7 @@ export function DetalleTicket() {
   if (cargando) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center bg-slate-50">
-        <RotateCw className="h-8 w-8 animate-spin text-[#1a2b5c]" />
+        <RotateCw className="h-8 w-8 animate-spin text-[#312e81]" />
         <p className="mt-3 text-sm font-medium text-slate-600">
           Cargando detalle del ticket...
         </p>
@@ -79,7 +79,7 @@ export function DetalleTicket() {
             </Button>
             <Button
               onClick={() => recargarTodo()}
-              className="bg-[#1a2b5c] text-white"
+              className="bg-[#312e81] text-white"
             >
               Reintentar
             </Button>
@@ -97,13 +97,13 @@ export function DetalleTicket() {
           <div className="flex items-center gap-4">
             <Link
               to="/tickets"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-[#1a2b5c] transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-[#312e81] transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               Volver a tickets
             </Link>
             <div className="h-4 w-px bg-slate-200" />
-            <span className="font-mono text-base font-bold text-[#1a2b5c]">
+            <span className="font-mono text-base font-bold text-[#312e81]">
               {formatearFolio(ticket.folio)}
             </span>
           </div>

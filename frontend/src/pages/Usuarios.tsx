@@ -63,7 +63,7 @@ export function Usuarios() {
 
         <Button
           onClick={() => setModalInvitarAbierto(true)}
-          className="bg-[#1a2b5c] text-white hover:bg-[#243b7d] shadow self-start sm:self-auto"
+          className="bg-[#312e81] text-white hover:bg-[#4338ca] shadow self-start sm:self-auto"
         >
           <UserPlus className="mr-2 h-4 w-4" />
           Invitar usuario
@@ -93,7 +93,7 @@ export function Usuarios() {
       <Card className="border-slate-200 shadow-sm overflow-hidden bg-white">
         {cargando ? (
           <div className="flex flex-col items-center justify-center py-16 text-slate-500">
-            <RotateCw className="h-8 w-8 animate-spin text-[#1a2b5c]" />
+            <RotateCw className="h-8 w-8 animate-spin text-[#312e81]" />
             <p className="mt-3 text-sm font-medium">Cargando usuarios...</p>
           </div>
         ) : usuarios.length === 0 ? (
@@ -128,7 +128,7 @@ export function Usuarios() {
                     {/* Nombre y Avatar */}
                     <TableCell>
                       <div className="flex items-center gap-3">
-                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1a2b5c]/10 text-xs font-bold text-[#1a2b5c]">
+                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#312e81]/10 text-xs font-bold text-[#312e81]">
                           {u.nombre_completo.charAt(0).toUpperCase()}
                         </div>
                         <div className="flex flex-col">
@@ -188,7 +188,7 @@ export function Usuarios() {
                           className="h-8 text-xs border-slate-200 hover:bg-slate-100"
                           title="Cambiar rol"
                         >
-                          <ShieldCheck className="h-3.5 w-3.5 mr-1 text-[#1a2b5c]" />
+                          <ShieldCheck className="h-3.5 w-3.5 mr-1 text-[#312e81]" />
                           Rol
                         </Button>
 

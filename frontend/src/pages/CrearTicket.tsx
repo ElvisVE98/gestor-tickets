@@ -269,7 +269,7 @@ export function CrearTicket() {
       <div>
         <Link
           to="/tickets"
-          className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-[#1a2b5c] transition-colors"
+          className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-[#312e81] transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
           Volver a tickets
@@ -279,7 +279,7 @@ export function CrearTicket() {
       {/* Tarjeta del formulario */}
       <Card className="border-slate-200 bg-white shadow-md">
         <CardHeader className="space-y-1 border-b border-slate-100 pb-4">
-          <div className="flex items-center gap-2 text-[#1a2b5c]">
+          <div className="flex items-center gap-2 text-[#312e81]">
             <PlusCircle className="h-5 w-5" />
             <CardTitle className="text-xl font-bold">Crear Nuevo Ticket</CardTitle>
           </div>
@@ -419,7 +419,7 @@ export function CrearTicket() {
                 className={`border-2 border-dashed border-slate-200 rounded-lg p-4 text-center cursor-pointer transition-colors ${
                   enviando
                     ? 'opacity-60 cursor-not-allowed bg-slate-50'
-                    : 'hover:border-[#1a2b5c]/50 hover:bg-slate-50/50'
+                    : 'hover:border-[#312e81]/50 hover:bg-slate-50/50'
                 }`}
               >
                 <div className="flex flex-col items-center justify-center gap-1.5 text-slate-500">
@@ -489,7 +489,7 @@ export function CrearTicket() {
               <Button
                 type="submit"
                 disabled={enviando}
-                className="bg-[#1a2b5c] text-white hover:bg-[#243b7d] shadow min-w-[140px]"
+                className="bg-[#312e81] text-white hover:bg-[#4338ca] shadow min-w-[140px]"
               >
                 {enviando ? (
                   faseEnvio === 'subiendo_adjuntos' ? (

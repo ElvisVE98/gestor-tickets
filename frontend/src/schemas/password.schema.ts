@@ -35,7 +35,7 @@ export const esquemaRecuperarPassword = z.object({
   correo_electronico: z
     .string()
     .min(1, 'El correo electrónico es requerido')
-    .email('Ingresa un formato de correo válido (ej: usuario@curifor.com)'),
+    .email('Ingresa un formato de correo válido (ej: usuario@empresa.com)'),
 });
 
 /**

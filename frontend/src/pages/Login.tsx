@@ -161,25 +161,31 @@ export function Login() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-50 px-4 py-12 sm:px-6 lg:px-8">
-      <div className="w-full max-w-md space-y-6">
-        {/* Encabezado con identidad visual Curifor */}
+    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-950 px-4 py-12 sm:px-6 lg:px-8">
+      {/* Fondo visual atractivo con gradientes dinámicos y patrón ambiental */}
+      <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-indigo-600/25 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-violet-600/20 blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[500px] rounded-full bg-blue-600/10 blur-3xl pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(#312e81_1px,transparent_1px)] [background-size:24px_24px] opacity-20 pointer-events-none" />
+
+      <div className="relative z-10 w-full max-w-md space-y-6">
+        {/* Encabezado con identidad visual Resolva */}
         <div className="text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-[#1a2b5c] text-white shadow-md">
-            <span className="text-xl font-bold tracking-wider">C</span>
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-[#312e81] text-white shadow-lg ring-1 ring-white/20">
+            <span className="text-xl font-bold tracking-wider">R</span>
           </div>
-          <h2 className="mt-4 text-2xl font-bold tracking-tight text-slate-900">
+          <h2 className="mt-4 text-2xl font-bold tracking-tight text-white">
             Plataforma de Tickets
           </h2>
-          <p className="mt-1 text-sm text-slate-600">
-            Sistema de Soporte Interno Curifor
+          <p className="mt-1 text-sm text-slate-300">
+            Sistema de Soporte Interno
           </p>
         </div>
 
         {/* Tarjeta con formulario */}
-        <Card className="border-slate-200 shadow-lg">
+        <Card className="border-slate-800 bg-white/95 backdrop-blur-md shadow-2xl">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-lg font-semibold text-[#1a2b5c]">
+            <CardTitle className="text-lg font-semibold text-[#312e81]">
               Iniciar Sesión
             </CardTitle>
             <CardDescription>
@@ -203,7 +209,7 @@ export function Login() {
                 <Input
                   id="correo_electronico"
                   type="email"
-                  placeholder="usuario@curifor.com"
+                  placeholder="usuario@empresa.com"
                   autoComplete="email"
                   disabled={enviando}
                   {...register('correo_electronico')}
@@ -223,7 +229,7 @@ export function Login() {
                   <button
                     type="button"
                     onClick={() => setModalRecuperarAbierto(true)}
-                    className="text-xs text-[#1a2b5c] hover:underline focus:outline-none"
+                    className="text-xs text-[#312e81] hover:underline focus:outline-none"
                   >
                     ¿Olvidaste tu contraseña?
                   </button>
@@ -247,7 +253,7 @@ export function Login() {
               {/* Botón de envío */}
               <Button
                 type="submit"
-                className="w-full bg-[#1a2b5c] text-white hover:bg-[#243b7d]"
+                className="w-full bg-[#312e81] text-white hover:bg-[#4338ca]"
                 disabled={enviando}
               >
                 {enviando ? (
@@ -264,8 +270,8 @@ export function Login() {
         </Card>
 
         {/* Pie de página sutil */}
-        <p className="text-center text-xs text-slate-500">
-          Curifor &copy; {new Date().getFullYear()} — Todos los derechos reservados
+        <p className="text-center text-xs text-slate-400">
+          Resolva &copy; {new Date().getFullYear()} — Todos los derechos reservados
         </p>
       </div>
 
@@ -276,7 +282,7 @@ export function Login() {
       >
         <DialogContent onClose={cerrarModalRecuperar}>
           <DialogHeader>
-            <div className="flex items-center gap-2 text-[#1a2b5c]">
+            <div className="flex items-center gap-2 text-[#312e81]">
               <KeyRound className="h-5 w-5" />
               <DialogTitle>Recuperar Contraseña</DialogTitle>
             </div>
@@ -301,7 +307,7 @@ export function Login() {
               <Button
                 type="button"
                 onClick={cerrarModalRecuperar}
-                className="mt-4 bg-[#1a2b5c] text-white hover:bg-[#243b7d]"
+                className="mt-4 bg-[#312e81] text-white hover:bg-[#4338ca]"
               >
                 Entendido
               </Button>
@@ -315,7 +321,7 @@ export function Login() {
                   <Input
                     id="correo_recuperar"
                     type="email"
-                    placeholder="usuario@curifor.com"
+                    placeholder="usuario@empresa.com"
                     autoComplete="email"
                     disabled={enviandoRecuperacion}
                     {...registerRecuperar('correo_electronico')}
@@ -343,7 +349,7 @@ export function Login() {
                 <Button
                   type="submit"
                   disabled={enviandoRecuperacion}
-                  className="bg-[#1a2b5c] text-white hover:bg-[#243b7d]"
+                  className="bg-[#312e81] text-white hover:bg-[#4338ca]"
                 >
                   {enviandoRecuperacion ? (
                     <>

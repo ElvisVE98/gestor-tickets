@@ -124,7 +124,7 @@ export function ModalCambiarRol({
             type="button"
             disabled={guardandoRol}
             onClick={handleConfirmarCambioRol}
-            className="bg-[#1a2b5c] text-white hover:bg-[#243b7d]"
+            className="bg-[#312e81] text-white hover:bg-[#4338ca]"
           >
             {guardandoRol ? (
               <>

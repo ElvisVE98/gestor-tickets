@@ -39,16 +39,16 @@ export function Layout() {
   return (
     <div className="flex min-h-screen bg-slate-50">
       {/* Sidebar fijo a la izquierda */}
-      <aside className="w-64 shrink-0 bg-[#1a2b5c] text-white flex flex-col justify-between shadow-xl">
+      <aside className="w-64 shrink-0 bg-[#312e81] text-white flex flex-col justify-between shadow-xl">
         {/* Cabecera del Sidebar */}
         <div>
           <div className="p-6 border-b border-white/10 flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[#1a2b5c] font-black text-xl shadow-md">
-              C
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[#312e81] font-black text-xl shadow-md">
+              R
             </div>
             <div>
               <h1 className="text-lg font-bold tracking-tight text-white leading-none">
-                Curifor
+                Resolva
               </h1>
               <p className="text-xs text-slate-300 mt-1 font-medium">
                 Mesa de ayuda
@@ -136,7 +136,7 @@ export function Layout() {
         </div>
 
         {/* Pie del Sidebar con Información del Perfil y Botón de Cerrar Sesión */}
-        <div className="p-4 border-t border-white/10 bg-[#142248]">
+        <div className="p-4 border-t border-white/10 bg-[#1e1b4b]">
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-2.5 overflow-hidden">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/20 text-xs font-bold text-white">
