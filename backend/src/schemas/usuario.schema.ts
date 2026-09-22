@@ -23,9 +23,15 @@ export const esquemaInvitarUsuario = z.object({
     })
     .trim()
     .email({ message: 'El formato del correo electrónico no es válido' })
-    .refine((correo) => correo.toLowerCase().endsWith('@curifor.com'), {
-      message: 'El correo electrónico debe pertenecer al dominio @curifor.com',
-    }),
+    .refine(
+      (correo) => {
+        const correoMin = correo.toLowerCase();
+        return correoMin.endsWith('@curifor.com') || correoMin.endsWith('@prueba.com');
+      },
+      {
+        message: 'El correo electrónico debe pertenecer al dominio @curifor.com o @prueba.com',
+      }
+    ),
 });
 
 // Esquema Zod para validar la modificación del rol de un usuario existente
